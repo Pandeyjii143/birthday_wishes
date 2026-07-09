@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery — Rajkumar's 26th Birthday</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="garland" id="garland-top"></div>
+
+    <header class="site-header">
+      <div class="nav-wrap">
+        <div class="brand">Rajkumar <span>turns 26</span></div>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="memories.html">Memories</a></li>
+            <li><a href="wishes.html">Wishes</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="wrap">
+        <p class="eyebrow">Through the years</p>
+        <h1>Gallery</h1>
+        <p class="lede">
+          A frame for every memory. Drop your own photos of Rajkumar into the
+          <code>images</code> folder and they'll appear here.
+        </p>
+
+        <div class="gallery-grid">
+          <figure class="photo">
+            <img
+              src="images/photo1.jpeg"
+              alt="Rajkumar photo 1"
+              onerror="this.remove()"
+            />
+            <div class="placeholder-label">
+              <span class="icon">🎂</span>photo1.jpg
+            </div>
+            <figcaption>Add a caption here</figcaption>
+          </figure>
+          <figure class="photo">
+            <img
+              src="images/photo2.jpeg"
+              alt="Rajkumar photo 2"
+              onerror="this.remove()"
+            />
+            <div class="placeholder-label">
+              <span class="icon">📷</span>photo2.jpg
+            </div>
+            <figcaption>Add a caption here</figcaption>
+          </figure>
+          <figure class="photo">
+            <img
+              src="images/photo3.jpeg"
+              alt="Rajkumar photo 3"
+              onerror="this.remove()"
+            />
+            <div class="placeholder-label">
+              <span class="icon">🎉</span>photo3.jpg
+            </div>
+            <figcaption>Add a caption here</figcaption>
+          </figure>
+          <figure class="photo">
+            <img
+              src="images/photo4.jpeg"
+              alt="Rajkumar photo 4"
+              onerror="this.remove()"
+            />
+            <div class="placeholder-label">
+              <span class="icon">💛</span>photo4.jpg
+            </div>
+            <figcaption>Add a caption here</figcaption>
+          </figure>
+          <figure class="photo">
+            <img
+              src="images/photo5.jpeg"
+              alt="Rajkumar photo 5"
+              onerror="this.remove()"
+            />
+            <div class="placeholder-label">
+              <span class="icon">✨</span>photo5.jpg
+            </div>
+            <figcaption>Add a caption here</figcaption>
+          </figure>
+          <figure class="photo">
+            <img
+              src="images/photo6.jpeg"
+              alt="Rajkumar photo 6"
+              onerror="this.remove()"
+            />
+            <div class="placeholder-label">
+              <span class="icon">🎈</span>photo6.jpg
+            </div>
+            <figcaption>Add a caption here</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-note">
+          <strong>How to add your own photos:</strong> put your image files
+          inside <code>public/images/</code> and name them
+          <code>photo1.jpg</code>, <code>photo2.jpg</code>, etc. (or edit the
+          <code>src</code> and <code>alt</code> attributes and the caption text
+          in <code>gallery.html</code> to match your own filenames). Tiles
+          without a matching image will keep showing a soft placeholder, so it's
+          safe to fill these in gradually.
+        </div>
+
+        <div class="btn-row">
+          <a class="btn btn-primary" href="wishes.html"
+            >Back to the wishes page</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      Made with <span class="heart">♥</span> for Rajkumar Pandey's 26th
+      birthday.
+    </footer>
+
+    <canvas id="confetti-canvas"></canvas>
+    <script src="script.js"></script>
+  </body>
+</html>
