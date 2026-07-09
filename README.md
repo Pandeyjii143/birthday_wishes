@@ -1,59 +1,64 @@
 # 🎉 Rajkumar Pandey's 26th Birthday Website
 
-A multi-page birthday website built to celebrate **Rajkumar Pandey's 26th birthday** — 09 July 2026.
+A festive multi-page birthday website celebrating **Rajkumar Pandey's 26th birthday** on **09 July 2026**.
 
-Theme: **"Marigold Night"** — diyas, fairy lights, and marigold/gold tones on a deep indigo night sky.
+Theme: **Marigold Night** — diyas, strings of fairy lights, and warm gold accents on an indigo night background.
 
-🔗 **Live site:** _add your Railway URL here once deployed_
+> 🔗 **Live site:** _add your Railway URL here once deployed_
 
 ---
 
 ## ✨ Pages
 
-| Page                   | Description                                                                   |
-| ---------------------- | ----------------------------------------------------------------------------- |
-| `public/index.html`    | Home — animated "26" hero, diyas, fairy-light garland                         |
-| `public/memories.html` | A timeline of memories (fully editable)                                       |
-| `public/wishes.html`   | Birthday letter, click-to-blow-out candle with confetti, and a live guestbook |
-| `public/gallery.html`  | Photo gallery with clean placeholders                                         |
+| Page                   | Description                                                                 |
+| ---------------------- | --------------------------------------------------------------------------- |
+| `public/index.html`    | Home page with animated “26”, floating diyas, and a festive hero section    |
+| `public/memories.html` | Editable memory timeline with special moments                               |
+| `public/wishes.html`   | Birthday letter, interactive candle blow-out, confetti animation, guestbook |
+| `public/gallery.html`  | Photo gallery with simple, elegant placeholders                             |
 
-## 🖼️ Adding photos
+## 🖼️ Add photos
 
-Drop image files into `public/images/` named `photo1.jpg` through `photo6.jpg` (`.jpg`, `.png`, or `.webp` all work) — they'll appear automatically on the Gallery page. To add more tiles, copy a `<figure class="photo">` block in `gallery.html`. See `public/images/README.txt` for details.
+Place images in `public/images/` named `photo1.jpg` through `photo6.jpg`.
+Supported formats: `.jpg`, `.png`, `.webp`.
 
-## ✍️ Editing content
+To add more images, copy a `<figure class="photo">` block inside `public/gallery.html`.
+See `public/images/README.txt` for image guidance.
 
-Everything is plain HTML/CSS/JS — open the `.html` files in any editor and change the wording (memories, the letter, guestbook labels, etc.) to make it personal.
+## ✍️ Customize content
+
+All pages are built with plain HTML, CSS, and JavaScript.
+Edit the `.html` files to update the greeting, memories, letter, wish list, and gallery content.
 
 ## 🚀 Run locally
 
-**Option A — VS Code Live Server (quickest)**
+### Option A — VS Code Live Server
 
 1. Install the **Live Server** extension in VS Code.
-2. Right-click `public/index.html` → **Open with Live Server**.
+2. Right-click `public/index.html` and choose **Open with Live Server**.
 
-**Option B — Node/Express (matches production)**
+### Option B — Node/Express server
 
 ```bash
 npm install
 npm start
 ```
 
-Then open http://localhost:3000
+Open `http://localhost:3000` in your browser.
 
-## ☁️ Deploy to Railway
+## ☁️ Deploy to Render
 
-1. Push this repo to GitHub.
-2. On [railway.app](https://railway.app) → **New Project → Deploy from GitHub repo** → select this repo.
-3. Railway auto-detects Node.js from `package.json` and runs `npm start`.
-4. No environment variables needed — the app reads `process.env.PORT` automatically.
-5. Go to **Settings → Networking → Generate Domain** to get a public URL.
+1. Push the repository to GitHub.
+2. Create a new Render project and connect the GitHub repo.
+3. Render will detect Node.js and run `npm start`.
+4. The app uses `process.env.PORT`, so no extra configuration is required.
+5. Add the generated Renders URL above once deployed.
 
 ## 🛠️ Tech stack
 
-- HTML5, CSS3, vanilla JavaScript (no build step, no frameworks)
-- Express.js as a lightweight static file server
-- `localStorage` for the guestbook — no database needed
+- HTML5, CSS3, vanilla JavaScript
+- Express.js static server
+- `localStorage` for guestbook persistence (no database required)
 
 ---
 
